@@ -1,350 +1,256 @@
-# Human Digital Twin Intelligence Platform
+# Human Digital Twin Intelligence
 
 <div align="center">
 
 # 🧠 Human Digital Twin Intelligence
-### *Integrating Multimodal AI and Generative Models for Non-Intrusive Health and Activity Monitoring*
+### *Multimodal AI and Generative Models for Non-Intrusive Health and Activity Monitoring*
 
-![Status](https://img.shields.io/badge/status-research%20prototype-blue)
-![Python](https://img.shields.io/badge/python-3.10%2B-brightgreen)
-![AI](https://img.shields.io/badge/focus-multimodal%20AI-purple)
+![Status](https://img.shields.io/badge/status-proposed%20research-blue)
+![Focus](https://img.shields.io/badge/focus-human%20digital%20twin-purple)
 ![Domain](https://img.shields.io/badge/domain-digital%20health-orange)
-![License](https://img.shields.io/badge/license-TBD-lightgrey)
+![AI](https://img.shields.io/badge/method-multimodal%20AI-green)
+![Ethics](https://img.shields.io/badge/principle-privacy%20preserving-lightgrey)
 
 </div>
 
 ---
 
-## 📌 Overview
+## 📌 Project Overview
 
-This repository contains the research code, documentation, and experimental workflow for developing a **Human Digital Twin (HDT)** platform that combines:
+**Human Digital Twin Intelligence** is a proposed research project focused on developing the foundations for a privacy-preserving, explainable, and human-centred Human Digital Twin (HDT) for health and activity monitoring.
 
-- **Multimodal sensing**
-- **Deep learning**
-- **Radar-based vital sign monitoring**
-- **Large Language Models (LLMs)**
+The project explores how multimodal sensing, wearable technologies, radar-based vital sign monitoring, deep learning, and Large Language Models (LLMs) can be brought together to better understand human activity, behaviour, physiological responses, and well-being in real-world indoor environments.
 
-The goal is to enable **privacy-preserving**, **non-intrusive**, and **interpretable** monitoring of human activity, behaviour, vital signs, and well-being in real-world indoor environments such as homes, workplaces, laboratories, community health spaces, and aged-care settings.
+The long-term vision is to support non-intrusive digital health technologies that can provide meaningful, interpretable, and ethically responsible insights for individuals, researchers, health professionals, and communities.
 
 ---
 
-## ✨ Key Features
+## 🌍 Background and Motivation
 
-- 🏃 **Human Activity Recognition (HAR)** using wearable and environmental sensing
-- 📡 **Radar-based vital sign monitoring** for non-contact sensing
-- ❤️ **Wearable physiological sensing** for reference measurement and multimodal fusion
-- 🤖 **Deep learning models** for activity and physiological pattern analysis
-- 💬 **LLM-powered explanations** for natural-language summaries and conversational insights
-- 🔒 **Privacy-aware design** with reduced reliance on intrusive sensing modalities
-- 📊 **Research-ready evaluation pipeline** for accuracy, reliability, interpretability, and trust
+Recent advances in ubiquitous computing, wearable sensing, wireless sensing, and artificial intelligence have created new opportunities for continuous monitoring of human activity and health.
 
----
+However, many existing human activity recognition and health-monitoring systems remain limited in several ways:
 
-## 🎯 Research Aims
+- They often rely on a single sensing source.
+- Some approaches use intrusive sensing technologies.
+- Sensor outputs are often difficult for non-technical users to interpret.
+- AI models frequently operate as black boxes.
+- Existing systems may not adequately account for context, privacy, cultural expectations, or user trust.
 
-This project aims to:
+This project responds to these limitations by investigating a more integrated and explainable approach to digital health monitoring.
 
-1. Develop a multimodal sensing framework for **human activity recognition**.
-2. Estimate **vital-sign indicators** using radar-based and wearable sensing.
-3. Fuse wearable, radar, and environmental sensor data into a **Human Digital Twin** model.
-4. Use deep learning to recognise **physical activities** and **behavioural patterns**.
-5. Use LLMs to generate **interpretable, conversational summaries** of system outputs.
-6. Evaluate model **accuracy, reliability, usability, interpretability, and user trust**.
-7. Create an **ethically managed multimodal dataset** for future AI and digital health research.
+Instead of treating activity, context, and physiological signals separately, the project considers how they may be connected through a Human Digital Twin: a dynamic digital representation that can model aspects of a person’s activity and well-being over time.
 
 ---
 
-## 🏗️ System Architecture
+## ❓ Research Problem
+
+Current activity recognition and health-monitoring systems are often fragmented, intrusive, and difficult to interpret. They may detect movement or physiological patterns, but they do not always explain what those patterns mean or why the system reached a particular inference.
+
+The central research problem is:
+
+> **How can multimodal sensing and Generative AI be integrated to create a privacy-preserving and explainable Human Digital Twin capable of modelling and communicating human activity, vital signs, and well-being in real-world environments?**
+
+---
+
+## 🎯 Project Aim
+
+The aim of this project is to investigate the foundations of an AI-driven Human Digital Twin platform that can combine non-intrusive environmental sensing, wearable sensing, radar-based vital sign monitoring, and Generative AI to support interpretable health and activity monitoring.
+
+The project is concerned not only with technical accuracy, but also with transparency, usability, privacy, and responsible deployment.
+
+---
+
+## 🧭 Key Objectives
+
+The proposed research has four main objectives:
+
+1. **Develop a multimodal understanding of human activity and context**  
+   Explore how different sensing sources can contribute to recognising physical activity, posture, movement, and behavioural patterns.
+
+2. **Investigate radar-based vital sign monitoring**  
+   Examine how radar sensing can support contactless monitoring of physiological indicators such as breathing-related and heart-related patterns.
+
+3. **Link behavioural and physiological indicators**  
+   Study how activity patterns and vital-sign indicators may be connected within a Human Digital Twin representation.
+
+4. **Use LLMs for explainable and conversational insights**  
+   Investigate how Large Language Models can convert complex sensor and AI outputs into clear, human-readable summaries and explanations.
+
+---
+
+## 🧠 Conceptual Vision
 
 ```mermaid
 flowchart LR
-    A[Participant] --> B[Wearable Sensors]
-    A --> C[Radar Sensors]
-    A --> D[Depth Sensors]
-
-    B --> E[Multimodal Data Collection]
-    C --> E
-    D --> E
-
-    E --> F[Pre-processing and Synchronisation]
-    F --> G[Deep Learning Models]
-    G --> H[Activity Recognition]
-    G --> I[Vital Sign Estimation]
-    H --> J[Human Digital Twin State]
-    I --> J
-    J --> K[LLM-based Explanation Layer]
-    K --> L[Natural-language Summaries]
-    K --> M[Conversational Insights]
+    A[Human Activity and Well-being] --> B[Multimodal Sensing]
+    B --> C[AI-based Interpretation]
+    C --> D[Human Digital Twin]
+    D --> E[Explainable Insights]
+    E --> F[Researchers, Participants, Health Users, Communities]
 ```
 
----
-
-## 🧩 Sensing Modalities
-
-| Modality | Example Device / Source | Purpose |
-|---|---|---|
-| **IMU sensors** | Body-worn inertial sensors | Capture acceleration, orientation, and movement patterns |
-| **mmWave radar** | Radar sensing platform | Support non-contact motion analysis and vital sign monitoring |
-| **Hexoskin smart vest** | Wearable smart garment | Record respiration, heart rate, and related physiological signals |
-| **Depth sensors** | Depth camera / depth sensing device | Capture non-identifiable posture and body movement structure |
-| **Wearable ECG / heart-rate devices** | Reference wearable device | Provide physiological reference measures for validation |
+The project vision is to move from raw sensing signals toward meaningful, interpretable, and privacy-aware digital health insights.
 
 ---
 
-## 🔄 AI and Data Analysis Pipeline
+## 🧩 Core Research Themes
 
 ```mermaid
-flowchart TD
-    A[Data Collection] --> B[Pre-processing]
-    B --> C[Signal Filtering]
-    C --> D[Segmentation]
-    D --> E[Feature Learning / Deep Models]
-    E --> F[Human Activity Recognition]
-    E --> G[Vital Sign Estimation]
-    F --> H[Multimodal Fusion]
-    G --> H
-    H --> I[Human Digital Twin Representation]
-    I --> J[LLM Summary Generation]
-    J --> K[Interpretation and Reporting]
+mindmap
+  root((Human Digital Twin Intelligence))
+    Multimodal AI
+      Activity recognition
+      Behaviour modelling
+      Context awareness
+    Radar Sensing
+      Contactless monitoring
+      Vital sign indicators
+      Motion patterns
+    Wearable Sensing
+      Movement data
+      Physiological signals
+      Reference measurements
+    Generative AI
+      Natural-language summaries
+      Conversational explanation
+      Interpretability
+    Responsible AI
+      Privacy
+      Trust
+      Transparency
+      Cultural safety
 ```
 
-### Pipeline Stages
+---
 
-#### 1. Data Collection
-Participants perform functional physical activities while data are collected from wearable and environmental sensors.
+## 📡 Multimodal Sensing Perspective
 
-#### 2. Pre-processing
-Sensor streams are synchronised, cleaned, filtered, and segmented into fixed-length time windows.
+The project considers multiple complementary sensing modalities, including:
 
-#### 3. Human Activity Recognition
-Deep learning models classify activities such as:
-- sitting
-- standing
-- walking
-- lying
-- transitional movements
+| Sensing Modality | Research Role |
+|---|---|
+| **Wearable inertial sensors** | Support movement and activity recognition |
+| **Radar sensing** | Enable non-contact activity and vital sign monitoring |
+| **Smart physiological garments** | Provide wearable reference signals such as breathing and heart-rate measures |
+| **Depth sensing** | Support non-identifying posture and movement analysis |
+| **Wearable physiological devices** | Provide additional reference measures for health-related signals |
 
-#### 4. Vital Sign Estimation
-Radar and wearable data are analysed to estimate indicators such as:
-- breathing-rate patterns
-- heart-rate-related patterns
-- physiological variation over time
-
-#### 5. Multimodal Fusion
-Activity, context, and physiological signals are fused into an HDT representation.
-
-#### 6. LLM-based Explanation
-LLMs convert processed outputs into natural-language summaries, explanations, and conversational responses.
-
-#### 7. Evaluation
-Performance is assessed using classification, estimation, agreement, usability, and trust metrics.
+The focus is on how these modalities may contribute to a richer and more contextual understanding of human activity and well-being.
 
 ---
 
 ## 💬 Role of Large Language Models
 
-LLMs make the Human Digital Twin easier to understand for researchers, participants, and future users.
+Large Language Models are important because they can help make Human Digital Twin outputs understandable.
 
-They may support:
+In this project, LLMs are considered as an explanation layer that may help translate technical outputs into natural language. For example, instead of only reporting an activity label or a numerical signal, an LLM could generate a summary such as:
 
-- Plain-language summaries of activity and vital sign patterns
-- Explanations of why the system inferred a particular activity or physiological trend
-- Conversational interaction with processed HDT outputs
-- Structured reports for researchers or health professionals
-- Improved transparency and usability of AI-generated outputs
+> The participant showed a period of light activity followed by seated rest. Breathing-rate indicators appeared more stable during the resting period than during movement.
 
-> **Important:** LLMs are **not** used to make clinical diagnoses or provide medical advice.  
-> They are constrained to processed, anonymised, and validated system outputs.
+LLMs may support:
 
----
+- Explanation of activity and vital-sign patterns
+- Plain-language summaries of multimodal AI outputs
+- Conversational interaction with processed Human Digital Twin information
+- Improved transparency for non-technical users
+- Better communication between AI systems, researchers, and future health users
 
-## 🧠 Example HDT Output
-
-```text
-During the activity session, the participant completed several transitions from sitting to standing and walking. 
-The system detected mostly light-intensity movement, with stable breathing-rate trends during seated and standing activities. 
-Increased movement variability was observed during walking tasks.
-```
-
-This type of summary is intended to make technical model outputs easier to interpret while preserving privacy and avoiding unsupported clinical claims.
+LLMs are not intended to provide medical diagnosis or replace professional clinical judgement.
 
 ---
 
-## 📂 Repository Structure
+## ⚠️ Key Challenges
 
-```text
-hdt-intelligence/
-├── data/                   # Data storage placeholders; raw participant data are not committed
-├── docs/                   # Project documentation, protocols, ethics-related material
-├── notebooks/              # Exploratory analysis and model development notebooks
-├── src/
-│   ├── preprocessing/      # Cleaning, filtering, synchronisation, segmentation
-│   ├── models/             # Deep learning and multimodal fusion models
-│   ├── radar/              # Radar signal processing and vital sign estimation
-│   ├── imu/                # IMU processing and HAR modules
-│   ├── llm/                # LLM summarisation and explanation components
-│   └── evaluation/         # Metrics, validation, and visualisation utilities
-├── tests/                  # Unit and integration tests
-├── configs/                # Experiment and model configuration files
-├── scripts/                # Training, evaluation, and data-processing scripts
-├── requirements.txt        # Python dependencies
-├── environment.yml         # Optional conda environment file
-└── README.md
-```
+This project addresses several important scientific and practical challenges.
 
----
+### 1. Multimodal Data Fusion
 
-## 🚀 Installation
+Human behaviour is complex and cannot be fully understood through a single sensor. A key challenge is how to combine wearable, radar, and environmental sensing data in a coherent and reliable way.
 
-> Installation instructions can be refined as the codebase matures.
+### 2. Privacy-Preserving Monitoring
 
-### Clone the repository
+Health and activity monitoring can easily become intrusive. The project therefore emphasises non-intrusive sensing and privacy-aware design.
 
-```bash
-git clone https://github.com/<your-org>/<your-repo>.git
-cd <your-repo>
-```
+### 3. Radar-Based Vital Sign Interpretation
 
-### Create a Python virtual environment
+Radar can support contactless physiological monitoring, but vital-sign estimation is technically challenging because signals may be affected by movement, posture, distance, noise, and environmental conditions.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-```
+### 4. Explainability and Trust
 
-### Install dependencies
+Even accurate AI models may be difficult to trust if their outputs are opaque. A major challenge is to make AI reasoning understandable without oversimplifying or overclaiming.
 
-```bash
-pip install -r requirements.txt
-```
+### 5. Human-Centred Design
 
-### Optional: Conda environment
+A Human Digital Twin must be useful and meaningful to people, not only technically sophisticated. This requires attention to usability, interpretability, participant experience, and future stakeholder needs.
 
-```bash
-conda env create -f environment.yml
-conda activate hdt-intelligence
-```
+### 6. Ethical and Cultural Responsibility
+
+Digital health technologies must respect privacy, autonomy, data sovereignty, and cultural values. This is particularly important in the Aotearoa New Zealand context, where responsible AI must align with Te Tiriti principles and support equitable outcomes.
 
 ---
 
-## ▶️ Example Workflow
+## 🌱 Importance of the Project
 
-```bash
-# Pre-process multimodal sensor data
-python scripts/preprocess_data.py --config configs/preprocessing.yaml
+This research is important because it contributes to the development of future digital health systems that are more:
 
-# Train a human activity recognition model
-python scripts/train_har_model.py --config configs/har_model.yaml
-
-# Estimate radar-based vital signs
-python scripts/run_vital_sign_estimation.py --config configs/radar_vitals.yaml
-
-# Generate an LLM-based summary from processed outputs
-python scripts/generate_summary.py --input outputs/session_results.json
-```
+- **Non-intrusive** — reducing reliance on invasive or privacy-sensitive monitoring.
+- **Personalised** — modelling activity and physiological patterns in relation to individual contexts.
+- **Explainable** — making AI outputs easier to understand.
+- **Human-centred** — designing systems around people rather than technology alone.
+- **Ethically responsible** — foregrounding privacy, transparency, trust, and cultural appropriateness.
+- **Scalable** — creating foundations for future applications in homes, workplaces, community spaces, and aged-care environments.
 
 ---
 
-## 📈 Evaluation Metrics
+## 🔬 Research Significance
 
-### Human Activity Recognition
+The project has potential significance across several domains.
 
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- AUC-ROC
-- Confusion matrices
-- Leave-one-subject-out validation
-- k-fold cross-validation
+### Research Significance
 
-### Vital Sign Estimation
+It can advance knowledge in multimodal AI, human activity recognition, radar-based vital sign monitoring, Human Digital Twins, and explainable AI.
 
-- Mean absolute error (MAE)
-- Root mean squared error (RMSE)
-- Correlation coefficients
-- Intraclass correlation coefficients (ICC)
-- Bland-Altman analysis
-- Agreement with wearable or ECG-derived reference data
+### Health and Well-being Significance
 
-### Explainability and Usability
+It may support future systems for recognising patterns related to physical activity, sedentary behaviour, physiological variation, and well-being.
 
-- Participant feedback
-- Researcher feedback
-- Explanation clarity
-- Perceived trust
-- Usability assessment
-- Expert review of LLM-generated summaries
+### Technological Significance
+
+It contributes to the development of integrated digital health platforms that combine sensing, AI modelling, and natural-language explanation.
+
+### Social Significance
+
+It supports a future in which health-monitoring technologies are more accessible, interpretable, and privacy-aware.
+
+### Māori and Pacific Relevance
+
+The project emphasises responsible data use, community trust, and culturally appropriate approaches to digital health innovation. It aligns with values such as kaitiakitanga, manaakitanga, rangatiratanga, and hauora.
 
 ---
 
-## 🗺️ Research Workflow at a Glance
+## 🧭 Project Positioning
 
 ```mermaid
-timeline
-    title HDT Research Workflow
-    section Phase 1
-      Study design and ethics approval : Preparation
-      Sensor testbed setup : Setup
-    section Phase 2
-      Participant recruitment : Recruitment
-      Multimodal data collection : Data acquisition
-    section Phase 3
-      Deep learning model development : Modelling
-      Radar vital sign estimation : Physiological modelling
-    section Phase 4
-      HDT integration : Fusion
-      LLM-based summary generation : Explainability
-    section Phase 5
-      Validation and dissemination : Outputs
+flowchart TD
+    A[Digital Health Need] --> B[Privacy-Preserving Monitoring]
+    B --> C[Multimodal Sensing]
+    C --> D[AI and Human Digital Twin Modelling]
+    D --> E[Explainable LLM-based Communication]
+    E --> F[Responsible and Human-Centred Health Insights]
 ```
 
----
-
-## 🔐 Data Governance and Ethics
-
-This project involves **human participant data** and must be conducted under appropriate ethics approval.
-
-### Core principles
-
-- Raw participant data must **not** be committed to this repository.
-- Identifiable or sensitive data must be stored in approved institutional systems.
-- Data should be anonymised or de-identified before analysis where possible.
-- Access must be restricted to authorised research personnel.
-- LLM-based summaries must use only processed and approved system outputs.
-- The system must **not** provide clinical diagnosis or medical advice.
+The project sits at the intersection of digital health, AI, sensing technologies, human-computer interaction, and responsible innovation.
 
 ---
 
-## ⚠️ Privacy and Safety Notes
+## 🏛️ Institutional Context
 
-This platform is a **research prototype**. It is **not a medical device** and should not be used for clinical decision-making without further validation, regulatory review, and appropriate governance.
+This project is associated with the **DCT Project Development Fund 2026** research proposal:
 
-Radar, wearable, and depth-sensing outputs may contain uncertainty. All AI-generated classifications, vital-sign estimates, and LLM summaries should be reviewed carefully and interpreted within the limits of the study design.
+**Human Digital Twin Intelligence: Integrating Multimodal AI and Generative Models for Non-Intrusive Health and Activity Monitoring**
 
----
-
-## 🛠️ Technologies
-
-The project may use:
-
-- Python
-- PyTorch
-- TensorFlow
-- NumPy
-- SciPy
-- pandas
-- scikit-learn
-- Matplotlib
-- Radar signal-processing libraries
-- Wearable and sensor SDKs
-- LLM APIs or locally hosted language models
-
----
-
-## 👥 Team and Collaborators
-
-This project is led by researchers at **Auckland University of Technology (AUT)**, bringing together expertise in:
+The project is led by researchers at **Auckland University of Technology (AUT)** and brings together expertise in:
 
 - Artificial intelligence
 - Pervasive computing
@@ -358,39 +264,9 @@ This project is led by researchers at **Auckland University of Technology (AUT)*
 
 ---
 
-## 💰 Funding
+## 🔑 Keywords
 
-This work is associated with the **DCT Project Development Fund 2026** project:
-
-**Human Digital Twin Intelligence: Integrating Multimodal AI and Generative Models for Non-Intrusive Health and Activity Monitoring**
-
----
-
-## 📚 Citation
-
-If you use this repository or build on this work, please cite the project or associated publications once available.
-
-```bibtex
-@misc{hdt_intelligence_2026,
-  title        = {Human Digital Twin Intelligence: Integrating Multimodal AI and Generative Models for Non-Intrusive Health and Activity Monitoring},
-  author       = {Yongchareon, Sira and collaborators},
-  year         = {2026},
-  institution  = {Auckland University of Technology},
-  note         = {Research project repository}
-}
-```
-
----
-
-## 📄 License
-
-The license for this repository will be confirmed before public release.
-
-Recommended options:
-
-- **MIT License** for open-source research code
-- **Creative Commons** license for documentation
-- Restricted access terms for datasets involving human participant data
+`Human Digital Twin` · `Multimodal AI` · `Digital Health` · `Human Activity Recognition` · `Radar Sensing` · `Vital Sign Monitoring` · `Wearable Sensing` · `Explainable AI` · `Large Language Models` · `Responsible AI`
 
 ---
 
