@@ -1,5 +1,3 @@
-# Human Digital Twin Intelligence
-
 <div align="center">
 
 # 🧠 Human Digital Twin Intelligence
