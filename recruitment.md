@@ -12,6 +12,8 @@
 
 **Take part in a short AUT research study and receive a gift voucher for your time.**
 
+![Participant recruitment visual](./recruitment_visual.png)
+
 </div>
 
 ---
@@ -62,20 +64,6 @@ You will be invited to take part in a short session where you may be asked to:
 - perform simple **everyday physical activities** such as sitting, standing, and walking
 
 You can ask questions before deciding whether to take part.
-
----
-
-# 📡 Study Technology at a Glance
-
-```mermaid
-flowchart LR
-    A[Hexoskin Vest] --> D[Vital signs]
-    B[AX6 IMUs] --> E[Body movement]
-    C[mmWave Radar] --> F[Remote sensing]
-    D --> G[AI research]
-    E --> G
-    F --> G
-```
 
 ---
 
