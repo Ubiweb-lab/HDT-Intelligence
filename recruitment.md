@@ -72,17 +72,17 @@ You can ask questions before deciding whether to take part.
 ```mermaid
 mindmap
   root((Signals))
-    Movement
+    Movement/Activity
       posture
-      walking
       transitions
     Vital Signs
       breathing rate
       heart rate
     Sensing
-      AX6 IMUs
+      IMUs
+      Depth Cameras
+      mmWave radars
       Hexoskin vest
-      mmWave radar
 ```
 
 ---
