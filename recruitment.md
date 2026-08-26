@@ -59,9 +59,9 @@ Participants will receive a **gift voucher** as a thank you for taking part.
 You will be invited to take part in a short session where you may be asked to:
 
 - wear a **Hexoskin smart vest**
-- wear a few **small AX6 IMU movement sensors**
-- be monitored by an **mmWave radar sensor**
-- perform simple **everyday physical activities** such as sitting, standing, and walking
+- wear a few **small IMU movement sensors**
+- be monitored by **3D Depth Cameras and mmWave radar sensors**
+- perform simple **functional movement activities** such as sitting, standing, and walking
 
 You can ask questions before deciding whether to take part.
 
