@@ -102,9 +102,9 @@ Your privacy is important to us.
 
 Please contact:
 
-### **Dr. Anuradha Singh**  
-**Email:** anuradha.singh@aut.ac.nz  
-**Mobile:** 022 496 2385
+### **Mohammad Shirazi**  
+**Email:** hossein.shirazi@autuni.ac.nz  
+**Mobile:** +64 2902202024
 
 ---
 
@@ -117,7 +117,7 @@ If you would like to:
 - express interest
 - arrange a session
 
-please contact **Dr. Anuradha Singh**.
+please contact **Mohammad Shirazi**.
 
 ---
 
