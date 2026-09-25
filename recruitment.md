@@ -82,7 +82,7 @@ mindmap
       IMUs
       Depth Cameras
       mmWave radars
-      Hexoskin vest
+      Smart vest
 ```
 
 ---
