@@ -61,7 +61,7 @@ You will be invited to take part in a short session where you may be asked to:
 - wear a **Hexoskin smart vest**
 - wear a few **small IMU movement sensors**
 - be monitored by **3D Depth Cameras and mmWave radar sensors**
-- perform simple **functional movement activities** such as sitting, standing, and walking
+- perform simple **basic functional movement activities** such as sitting, standing, and walking
 
 You can ask questions before deciding whether to take part.
 
@@ -94,7 +94,6 @@ Your privacy is important to us.
 - Your information will be handled confidentially.
 - Study data will be securely stored.
 - Participation is voluntary.
-- You may choose not to take part.
 
 ---
 
