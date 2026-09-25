@@ -42,7 +42,7 @@ You may be able to take part if you are:
 
 ## 🎁 What do participants receive?
 
-Participants will receive a **gift voucher** as a thank you for taking part.
+Participants will receive a **$100 gift voucher** as a thank you for taking part.
 
 ---
 
@@ -50,7 +50,7 @@ Participants will receive a **gift voucher** as a thank you for taking part.
 
 - **Location:** AUT WZ Level 1 Engineering Laboratory  
 - **Duration:** Approximately **1 hour**  
-- **Dates/times:** **Flexible**
+- **Dates/times:** **Flexible.** You can check our available sessions or make a booking with us via https://calendly.com/aut-hdt/join
 
 ---
 
@@ -100,26 +100,18 @@ Your privacy is important to us.
 
 ## 💬 Interested or want to learn more?
 
-Please contact:
+You can make a booking to participate via https://calendly.com/aut-hdt/join
+
+Or contact:
 
 ### **Mohammad Shirazi**  
 **Email:** hossein.shirazi@autuni.ac.nz  
 **Mobile:** +64 2902202024
 
----
-
-## ✉️ Get in touch
-
-If you would like to:
-
-- ask a question
-- check if you are eligible
-- express interest
-- arrange a session
-
-please contact **Mohammad Shirazi**.
+For more information: https://github.com/Ubiweb-lab/HDT-Intelligence/blob/2633072ee915200add9bb377f7df480cad63ce16/AUT%20Ethics/HDT%20Information-Sheet-V.2.2-1-July-2026.pdf
 
 ---
+
 
 <div align="center">
 
