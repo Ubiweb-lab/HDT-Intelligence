@@ -48,9 +48,9 @@ Participants will receive a **$100 gift voucher** as a thank you for taking part
 
 ## 📍 Where and how long?
 
-- **Location:** AUT WZ Level 1 Engineering Laboratory  
+- **Location:** AUT City Campus, WZ Building, Level 1 Engineering Laboratory  
 - **Duration:** Approximately **1 hour**  
-- **Dates/times:** **Flexible.** You can check our available sessions or make a booking with us via https://calendly.com/aut-hdt/join
+- **Dates/times:** **Flexible.** Check available sessions or make a booking with us via https://calendly.com/aut-hdt/join
 
 ---
 
