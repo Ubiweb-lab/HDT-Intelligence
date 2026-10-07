@@ -99,6 +99,8 @@ Your privacy is important to us.
 
 ## 💬 Interested or want to learn more?
 
+For more information about the project and what will happen on the day: https://github.com/Ubiweb-lab/HDT-Intelligence/blob/2633072ee915200add9bb377f7df480cad63ce16/AUT%20Ethics/HDT%20Information-Sheet-V.2.2-1-July-2026.pdf
+
 You can make a booking to participate via https://calendly.com/aut-hdt/join
 
 Or contact:
@@ -107,7 +109,7 @@ Or contact:
 **Email:** hossein.shirazi@autuni.ac.nz  
 **Mobile:** +64 2902202024
 
-For more information: https://github.com/Ubiweb-lab/HDT-Intelligence/blob/2633072ee915200add9bb377f7df480cad63ce16/AUT%20Ethics/HDT%20Information-Sheet-V.2.2-1-July-2026.pdf
+
 
 ---
 
